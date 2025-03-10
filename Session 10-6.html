@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Doi ti gia </h1>
+    <script>
+      // Nhập số tiền USD từ người dùng
+         const exchangeRate = 25000; // 1 USD = 25,000 VND
+         const usd = parseFloat(prompt("Nhập số tiền USD:"));
+
+      // Kiểm tra giá trị hợp lệ
+         if (!isNaN(usd)) {
+         const vnd = usd * exchangeRate;
+         alert(usd + " USD tương đương " + vnd + " VND");
+         } else {
+         alert("Vui lòng nhập một số hợp lệ.");
+         }
+
+    </script>
+</body>
+</html>
